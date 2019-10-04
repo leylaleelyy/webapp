@@ -1,0 +1,64 @@
+.page-box3{
+    position: relative;
+    width: 100%;
+    height: 92%;
+}
+.page-box3>div{
+    height: 8%;
+    border-bottom: #a8afb5 solid .5px;
+}
+.img-box3{
+    float: left;
+    position: relative;
+    top: 5px;
+    left: 5px;
+    height: 80%;
+    width: 10%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+}
+
+.passage3>.img-box3{
+    background-image: url("../icon/pengyouquan.svg");
+}
+.chat>.img-box3{
+    background-image: url("../icon/saoyisao.svg");
+}
+.wechat>.img-box3{
+    background-image: url("../icon/yaoyiyao.svg");
+}
+.little>.img-box3{
+    background-image: url("../icon/xiaochengxu.svg");
+}
+div .text-box3{
+    text-align: left;
+    color: black;
+    float: left;
+    position: relative;
+    margin-left: 5%;
+    top: 5px;
+    height: 80%;
+    width:50%;
+}
+
+.text{
+    color: black;
+    display: inline-block;
+    margin-top: 8px;
+    font-size: 1em;
+
+}
+.img-arrow{
+    float: right;
+    position: relative;
+    top: 5px;
+    right: 5px;
+    height: 80%;
+    width: 10%;
+    background-image: url("../icon/arrow.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+    border-radius: 50%;
+}

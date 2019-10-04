@@ -1,0 +1,33 @@
+.page1{
+    height: 100%;
+}
+.header{
+    position: sticky;
+    background-color: darkgray;
+    height: 8%;
+    width: 100%;
+
+}
+.header span{
+    float: left;
+    margin-top: 2%;
+    margin-left: 2%;
+    font-size: 1.5em;
+}
+.header div{
+    height: 80%;
+    width: 10%;
+    float: right;
+    margin-top: 2%;
+    margin-right: 2%;
+    background-repeat: no-repeat;
+}
+.header div.search{
+    background-image: url("icon/sousuo.svg");
+}
+.header div.add{
+     background-image: url("icon/add.svg");
+}
+.tab_chat{
+    background-color: black;
+}

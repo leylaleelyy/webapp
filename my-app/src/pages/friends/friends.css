@@ -1,31 +1,52 @@
-#root #friends {
-    font-size: 0.32rem;
+.page-box2{
+    position: relative;
+    width: 100%;
+    height: 92%;
 }
-.friend_lists {
-    background-color: #fff;
-    padding-left:.1rem;
+.page-box2>div{
+    height: 8%;
+    border-bottom: #a8afb5 solid .5px;
 }
-.friend_lists .friend_list:last-of-type {
-    border:none;
+.img-box2{
+    float: left;
+    position: relative;
+    top: 5px;
+    left: 5px;
+    height: 80%;
+    width: 10%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 5px;
+    border: gray solid 1px;
 }
-.friend_list .friend_list_logo {
-    width:0.36rem;
-    height:.36rem;
+
+.passage2>.img-box2{
+    background-image: url("../icon/dingyuehao.svg");
 }
-.friend_list {
-    height:0.55rem;
-    border-bottom:.01rem solid #d9d9d9;
-    display: flex;
+.chat>.img-box2{
+    background-image: url("../icon/lianxirenmingdan.svg");
 }
-.friend_list_logoWrap {
-    flex-grow: 0;
-    display: flex;
-    justify-content:center;
-    align-items: center;
+.chat>.img-box2{
+    background-image: url("../icon/qunliao.svg");
 }
-.friend_name {
-    flex-grow: 1;
-    padding-left: 0.1rem;
-    font-size: .15rem;
-    line-height: .54rem;
+.wechat>.img-box2{
+    background-image: url("../icon/lianxirenmingdan.svg");
+}
+
+div .text-box2{
+    text-align: left;
+    color: black;
+    float: right;
+    position: relative;
+    top: 5px;
+    height: 80%;
+    width:80%;
+}
+
+.text{
+    color: black;
+    display: inline-block;
+    margin-top: 8px;
+    font-size: 1em;
+
 }

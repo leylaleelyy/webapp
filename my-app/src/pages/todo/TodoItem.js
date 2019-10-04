@@ -1,30 +1,31 @@
-import React from 'react';
-import imgURL from './duigou.svg';
+import React from'react';
 
 class TodoItem extends React.Component{
-    //父子组件的概念，父组件通过属性的形式向子组件传递参数，子组件通过props的形式来接收到父组件传递过来的参数
-    //子组件如果想和父组件通信，要调用父组件传递过来的方法
-
+    //当父组件的render函数执行，子组件的render也会重新运行一次
+    //1、是props本身发生了改变，2、父组件的改变
     constructor(props){
-        super(props);//继承的一个代码
-        this.handleDelete=this.handleDelete.bind(this);
+        super(props);
+        this.handleClick=this.handleClick.bind(this);
     }
 
-    handleDelete(){
-        this.props.delete(this.props.index);//使用这个方法，然后把值传给这个方法
-        //子组件被点击的时候拿到里index调用了父组件的方法，把index传递给了父组件
-        //console.log(this.props.index);获取下标
+    handleClick(){
+        this.props.deleteItem(this.props.index);
     }
 
+    shouldComponentUpdate(nextProps, nextState, nextContext) {
+        if(nextProps.content!==this.props.content){
+            return true;
+        }else{
+            return false;
+        }
+    }
 
     render() {
-        const {content}=this.props;//es6的结构赋值
-        return (
-            <div className='todoitem' onClick={this.handleDelete}>
-                <img className={'done'} src={imgURL} alt='' />
-                {content}
-            </div>
+        return(//获取了传递过来的content
+            <div onClick={this.handleClick.bind(this)}>{this.props.content}</div>
         )
     }
 }
+
+
 export default TodoItem;

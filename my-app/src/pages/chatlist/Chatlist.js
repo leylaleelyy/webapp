@@ -103,6 +103,7 @@ let mapStatesToProps = (state) => {
     chatlists: state.save_info.rooms,
     friends: state.save_info.friends
   }
-}
+};
 
+export default Chatlist;
 export default connect(mapStatesToProps)(Chatlist);
