@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-export default class Home extends Component {
+export default class Passage extends Component {
     render() {
         return (
             <div >
