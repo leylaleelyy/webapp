@@ -1,0 +1,177 @@
+.circle-header{
+    position: fixed;
+    top: 0;
+    height: 8%;
+    width: 100%;
+}
+.head-bg{
+    width: 100%;
+    height: 35%;
+    background-color: #403833;
+    border: 1px solid grey;
+}
+.img-edi{
+    float: right;
+    position: relative;
+    top: 5px;
+    right: 5px;
+    height: 80%;
+    width: 13%;
+    background-image: url("../icon/bianji.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.icon-img{
+    float: right;
+    position: relative;
+    bottom: -5%;
+    width: 20%;
+    height: 30%;
+    border: 1px solid grey;
+    border-radius: 5px;
+    background-image: url("../icon/touxiang.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+.my-name{
+    float: right;
+    position: relative;
+    bottom: -15%;
+    margin-right: 10px;
+    font-weight: bold;
+    color: whitesmoke;
+}
+.container-bg{
+    position: relative;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    height: 35px;
+    text-align: center;
+}
+.container-bg div{
+    position: absolute;
+    width: 30px;
+    height: 36px;
+    margin: 0 10px;
+    opacity: 0;
+    transform: rotate(180deg);
+    color: #ffffff;
+    font-size: 3em;
+    animation: love 2s linear infinite;/*加速*/
+}
+.container-bg div:nth-child(8)::before{
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 0px;
+    width: 30px;
+    height: 30px;
+    background: #db2f00;
+    border-radius: 50%;
+}
+.container-bg div:nth-child(9)::before{
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 0px;
+    width: 30px;
+    height: 30px;
+    background: #13a4a5;
+    border-radius: 50%;
+}
+.container-bg div:nth-child(10)::before{
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 0px;
+    width: 30px;
+    height: 30px;
+    background: #339933;
+    border-radius: 50%;
+}
+.container-bg div:nth-child(2){
+    animation-delay: 0.2s;
+}
+.container-bg div:nth-child(3){
+    animation-delay: 0.4s;
+}
+.container-bg div:nth-child(4){
+    animation-delay: 0.6s;
+}
+.container-bg div:nth-child(5){
+    animation-delay: 0.8s;
+}
+.container-bg div:nth-child(6){
+    animation-delay: 1s;
+}
+.container-bg div:nth-child(7){
+    animation-delay: 1.2s;
+}
+.container-bg div:nth-child(8){
+    animation-delay: 1.4s;
+}
+.container-bg div:nth-child(9){
+    animation-delay: 1.6s;
+}
+.container-bg div:nth-child(10){
+    animation-delay: 1.8s;
+}
+
+@keyframes love {
+    0%{
+        right: 0;
+        opacity: 0;
+    }
+    30%{
+        right: 30%;
+        transform: rotate(0);
+        opacity: 1;
+    }
+    65%{
+        right: 65%;
+        transform: rotate(0);
+    }
+    100%{
+        right: 100%;
+        transform: rotate(-180deg);
+        opacity: 0;
+    }
+}
+.container1{
+    margin: 50px auto;
+    width: 50px;
+    display: flex;/*弹性盒子*/
+    justify-content: space-between;
+}
+.container1 .pillar{
+    width: 5px;
+    height: 30px;
+    border-radius: 4px;
+    background-color: lightgreen;
+    animation: music infinite 1s ease;/*最后一个函数，缓慢运动*/
+}
+.container1 .pillar:nth-child(2){
+    animation-delay: 0.2s;
+}
+.container1 .pillar:nth-child(3){
+    animation-delay: 0.4s;
+}
+.container1 .pillar:nth-child(4){
+    animation-delay: 0.6s;
+}
+.container1 .pillar:nth-child(5){
+    animation-delay: 0.8s;
+}
+
+@keyframes music {/*定义动画*/
+    0%,100%{
+        background-color: lightgreen;
+    }/*颜色相同*/
+    50%{
+        transform: scaleY(1.75);
+        background-color: lightblue;
+    }
+}

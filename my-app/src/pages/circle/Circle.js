@@ -8,7 +8,7 @@ class Circle extends Component{
     render() {
         return(
             <div className='page-box3'>
-                <div className='passage3'>
+                <div className='passage3' onClick={()=>{window.location.href="/friend-circle"}}>
                     <div className='img-box3'></div>
                     <div className='text-box3'>
                         <span className='text'>朋友圈</span>

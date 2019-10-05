@@ -8,7 +8,7 @@ class MainList extends Component{
     render() {
         return(
             <div className='page-box'>
-                <div onClick={()=>{window.location.href=""}}
+                <div onClick={()=>{window.location.href="/passage"}}
                      className='passage'>
                     <div className='img-box'></div>
                     <div className='text-box'>
